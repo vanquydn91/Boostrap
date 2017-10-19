@@ -1,0 +1,17 @@
+
+#packt {
+  border-style: solid;
+  border-color: black;
+  color: #FF00FF;
+}
+
+#pub {
+  border-style: solid;
+  border-color: black;
+  color: #FF00FF;
+}
+
+#packtlib {
+  border-style: dotted;
+  border-color: lime;
+}

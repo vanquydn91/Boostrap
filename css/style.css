@@ -1,0 +1,16 @@
+#pub {
+  padding: 50px 100px 50px 50px;
+}
+#packt{
+  float: right;
+  display: block;
+  margin-right: 0px;
+  clear: left;
+}
+
+#packtpub{
+  float: right;
+  display: block;
+  margin-right: 0px;
+  clear: left;
+}

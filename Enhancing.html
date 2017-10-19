@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".packtpub1").tooltip({
+          placement: 'leff'
+        });
+        $(".packtpub2").tooltip({
+          placement: 'top'
+        });
+        $(".packtpub3").tooltip({
+          placement: 'right'
+        });
+        $(".packtpub4").tooltip({
+          placement: 'bottom'
+        });
+        $("#modals1").modal('show');
+      });
+    </script>
+    <style type="text/css">
+    .scroll-area {
+      height: 500px;
+      position: relative;
+      overflow: auto;
+    }
+      #packt{
+        padding: 150px 150px 150px 150px;
+      }
+      .item{
+        background: #333;
+        text-align: center;
+        height: 300px !important;
+      }
+      .carouse{
+        margin-top: 20px;
+      }
+
+    </style>
+  </head>
+  <body id="packt">
+    <h2>Tooltip</h2>
+    <div>
+      <button type="button" class="btn btn-primary packtpub1" data-toggle="tooltip" title="Left Tooltip">
+        Hey Joe
+      </button>
+      <hr><br><br>
+      <button type="button" class="btn btn-primary packtpub2" data-toggle="tooltip" title="Top Tooltip">
+        Hey Joe
+      </button>
+      <hr><br><br>
+      <button type="button" class="btn btn-primary packtpub3" data-toggle="tooltip" title="Right Tooltip">
+        Hey Joe
+      </button>
+      <hr><br><br>
+      <button type="button" class="btn btn-primary packtpub4" data-toggle="tooltip" title="Bottom Tooltip">
+        Hey Joe
+      </button>
+      <hr><br><br>
+    </div>
+    <br><br>
+    <h2>POPOVERS</h2>
+    <div>
+      <ul class="packtpub">
+        <li><a href="#" class="btn btn-default" data-toggle="popover" title="Musician" data-content="Awesome Vocalist">Jim Morrison</a></li>
+        <hr><br>
+        <li><a href="#" class="btn btn-success" data-toggle="popover" title="Scientist" data-content="Awesome Thinker">Stephen Hawking</a></li>
+        <hr><br>
+      </ul>
+    </div>
+
+    <div>
+      <ul class="pubman">
+        <li><a href="#" class="btn btn-danger" data-toggle="popover" title="Musician" data-content="Amazing guitarist">Jimi Hendrix</a></li>
+        <hr><br>
+        <li><a href="#" class="btn btn-primary" data-toggle="popover" title="Philosopher" data-content="Rational Thinker">Socrates</a></li>
+      </ul>
+    </div>
+    <br><br>
+    <h2>Accordion</h2>
+    <div class="panel-group" id="accordion">
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a  data-toggle="collapse" data-parent="#accordion" href="#packtpubcollapsel" href="">WebRTC</a>
+          </h4>
+        </div>
+        <div id="packtpubcolloapse1" class="panel-collapse collapsein">
+          <div class="panel-body">
+            <p>WebRTC(Web Real-Time Communication) enables web developers
+            to write real-time multimedia applications for theWeb which can be
+            deployed across multiple platforms, without the need for intermediate
+            software or plugins.WebRTC enables Peer-to-Peer, browser-to-
+            browser communication and is widely used for web-based phone
+            calling, conferencing, enterprise contact centres, and educational
+            apps. The resourceful and interactive nature of WebRTC makes it an
+            excellent utilityofchoice for real-time web application development.
+            <a href="https://www.packtpub.com/books/content/webrtc"> More
+            information</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a href="packtpubcollapse2" data-toggle="collapse" data-parent="#accordion">Meteor</a>
+          </h4>
+        </div>
+        <div id="packtpubcollapse2" class="panel-collapse collapse">
+          <div class="panel-body">
+            <p>
+              Meteor is an open-source web application
+              framework which follows the MVVM pattern.Meteor runs on both the
+              server-side as well as the client-side, since both share the
+              same database API. Meteor is written in pure JavaScript and uses
+              established design patterns, easing the pain of the tedious tasks of
+              web application development, helping you build robust applications in
+              very little time. <a href="https://www.packtpub.com/books/content/meteor-meteor-js">More information</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <h2>ScrollSpy</h2>
+    <p>
+      The ScrollSpy plugin is quite useful for automatically updating
+      nav targets based on scroll position. When you scroll the area below
+      the navbar,you can witness the change in the active class.It works for
+      dropdowns too.
+    </p>
+    <nav id="myNavbar" class="navbar navbar-default" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#packt1">Packt Information</a></li>
+          <li><a href="#packt2">Ordering information</a></li>
+          <li><a href="#packt3">Terms and conditions</a></li>
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Blogs and primers <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#packtsub1">Blog</a></li>
+              <li><a href="#packtsub2">Tech Hub</a></li>
+              <li><a href="#packtsub3">vanquy</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="scroll-area" data-spy="scroll" data-target="#myNavbar" data-offset="0">
+      <h1 id="packt1">Packt Infor</h1>
+      <p>...Some text here...</p>
+      <hr>
+      <h1 id="packt2">How pre-orders work</h1>
+      <p>...some text here...</p>
+      <h1 id="packt3"> Packt's Terms and Conditions</h1>
+      <p> ...Some text here... </p>
+      <hr>
+      <h1>Blogs and Primers: One stop Technical Hub </h1>
+      <p> ... Some text here... </p>
+      <h2 id="packtsub1">Golang Blog</h2>
+      <p> ...Some text here... </p>
+      <h2 id="packtsub2">Technical Hub for PhpStorm</h4>
+      <p> ...Some text here... </p>
+      <h2 id="packtsub3">Article abou
+    </div>
+    <br>
+    <br>
+    <h2>Modals</h2>
+    <div id="modals1" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h1 class="modal-title">Warning 18+</h1>
+          </div>
+          <div class="modal-body">
+            <p> Cảnh báo nội dung bạn truy cập thuộc trang web người lớn.</p>
+            <p class="text-warning" color:red ><small>Cảnh báo nguy hiểm</small></p>
+            <p><a href="#">Tìm hiểu thêm</a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Quit</button>
+            <button type="button" class="btn btn-danger">Proceed</button>
+          </div>
+        </div>
+      </div>
+    </div>
+      <br><br>
+    <h2>Carousels</h2>
+    <div id="myCarousel" class="carousel slide" data-interval="500" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-sile-to="1"></li>
+        <li data-target="#myCarousel" data-sile-to="2"></li>
+      </ol>
+      <!--Items-->
+      <div class="carousel-inner">
+        <div class="active item">
+          <img src="image/pack1.png" alt="Packt">
+          <div class="carousel-caption">
+            <h6><b>Packt: Always finding a way1</b></h6>
+          </div>
+        </div>
+        <div class="item">
+          <img src="image/pack2.png" alt="PacktLib">
+          <div class="carousel-caption">
+            <h6><b>Packt: Always finding a way 2</b></h6>
+          </div>
+        </div>
+        <div class="item">
+          <img src="image/image2.jpg" alt="PacktLib">
+          <div class="carousel-caption">
+            <h6><b>Packt: Always finding a way 3</b></h6>
+          </div>
+        </div>
+      </div>
+      <a href="#myCarousel" class="carousel-control left" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a href="#myCarousel" class="carousel-control right" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+  </body>
+</html>
